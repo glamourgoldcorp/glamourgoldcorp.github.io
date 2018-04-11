@@ -1,0 +1,533 @@
+<!doctype html >
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-formhelpers/2.3.0/css/bootstrap-formhelpers.min.css">
+        <link  rel="stylesheet" href="./static/style/style.css" type="text/css">
+        <title>Glamour Gold Corp</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-toggleable-md bg-dark navbar-dark fixed-top">
+            <!-- responsive -->
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarContents" arial-controls="navbarContents" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></button>
+            <a class="navbar-brand" href="#" style="max-width:2%"><img src="./static/images/logo.jpg" class="img-fluid" style="display: inline-block;">Glamour Gold Corp
+            </a>
+            <!--  navbar items collapsible -->
+            <div class="collapse navbar-collapse" id="navbarContents">
+                <!-- navbar items -->
+            <ul class="navbar-nav">
+                <li class="nav-item active mr-auto">
+                    <a style="margin-left:180px;" class="nav-link" href="#">Home</a>
+                </li>
+                <!-- dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Services
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item link " data-toggle="modal" data-target="#GServices">Marketing and Research</a>
+                        <a class="dropdown-item" href="#">Business consultancy</a>
+                        <a class="dropdown-item" href="#">Raw gold</a>
+                        <a class="dropdown-item" href="#">Diamond</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        About
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href= "#aboutUs"onclick= "openNav()"> Get to know us</a>
+                        <a class="dropdown-item" href="#ourVision" onclick="openNav()"> Our Vision </a>
+                        <a class="dropdown-item" href="#ourValues" onclick="openNav()"> Our Values </a>
+                        <a class="dropdown-item" href="#ourTeam" onclick="openNav()"> Our Team </a>
+                        <a class="dropdown-item" href="#membership" onclick="openNav()">Membership</a>
+                        <a class="dropdown-item" data-toggle="modal" data-target="#myModal"> Contact Us </a>
+
+                    </div>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+            <form class="form-inline" action="/action_page.php" id="searchform">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-basic" type="submit">Search</button>
+            </form>
+        </ul>
+        </div>
+        </nav>
+        <!-- carousel body.image slideshow -->
+        <div id = "wrap">
+        <div id="mycarousel" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#mycarousel" data-slide-to="2"></li>
+                <li data-target="#mycarousel" data-slide-to="1"></li>
+                <li data-target="#mycarousel" data-slide-to="3"></li>
+                <li data-target="#mycarousel" data-slide-to="4"></li>
+            </ul>
+            <div class="carousel-inner" > 
+                <div class="carousel-item active">
+                    <img alt="gold mining" id="goldm" src="./static/images/gold1.jpg">
+                    <div class="carousel-caption">
+                        <h1>Glamour Gold Corp</h1>
+                        <h3>You need gold we got it</h3>
+                        <p>From the local mining ground</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img alt="hardworking miners" id="goldm" src="./static/images/gold2.jpg">
+                    <div class="carousel-caption">
+                        <h1>Glamour Gold Corp</h1>
+                        <h3>You need gold we got it</h3>
+                        <p>From the local mining ground</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img alt="gold" id="goldm" src="./static/images/gold3.jpg">
+                    <div class="carousel-caption">
+                        <h1>Glamour Gold Corp</h1>
+                        <h3>You need gold we got it</h3>
+                        <p>From the sweats of hard working men and women</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img alt="gold" id="goldm" src="./static/images/diamond1.jpg">
+                    <div class="carousel-caption">
+                        <h1>Glamour Gold Corp</h1>
+                        <h3>You need gold we got it</h3>
+                        <p>We deal in diamonds too</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img alt="gold" id="goldm" src="./static/images/diamond3.jpg">
+                    <div class="carousel-caption">
+                        <h1>Glamour Gold Corp</h1>
+                        <h3>You need gold we got it</h3>
+                        <p>Everyone's bestfriend </p>
+                    </div>
+                </div>
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- /carousel body image slideshow -->
+
+        <!--sidenav  -->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="btn" onclick="closeNav()">&times;</a>
+            <p>
+                <h4 id="titles" id="aboutUs">A little Bit about Us</h4>
+                <p> Over a decade of marketing excellence. Glamour gold corps is a business development and creative strategy firm focused on efficiently, and end to end business delivering of transformative results.
+                When it comes to connecting your business to the Africa market, you are only as good as your results.
+                That is why we offer our clients full transparency into our tactics and outcome so that they can have a precise sense of ROI, this means collaborating with our partners to achieve our vision together. 
+                We are constantly looking for ways to innovate stress-less, more productive and responsible way we conduct our business.
+                We believe that our business should create economic and social benefits, and that the
+                places where we source should be better off because of our presence in those communities.
+                </p>
+                <!-- vision -->
+            <h4 id="titles" id="ourVision">Our Vision</h4>
+            <p> Become a world-class Business Consults and Marketing firm.
+                <br/>Create sustainable value.</p>
+                <!-- our values -->
+            <h4 id="titles" id="ourValues">Our Values</h4>
+            <p>
+                 Our Values are simple:
+                Business integrity.<br/>
+                Business Productivity.<br/>
+                Deliver consistent,reliable financial and operational performance by ensuring our asset portfolio is world-class, sustainably developed, and operating to the highest standards of excellence.<br/>
+                Be Responsible.<br/>
+                Do the right thing and honor our commitments.<br/>
+                Be respectful and ethical, and invest in the well-being of our people, our communities and our planet.<br/>
+            </p>
+            <!-- title -->
+            <h4 id="titles" id="ourTeam">Our Team </h4>
+                <!-- team carousel -->
+            <div id="teamcarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img alt="CEO,Glamour Gold Corp" id="teamimgs" src="./static/images/6.jpg">
+                        <div class="carousel-caption">
+                            <p>
+                                 MR. Spencer Yagan<br/>
+                                CEO<br/>
+                                Glamour Gold Corp
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img alt="Executive Director Operation,Glamour Gold Corp" id="teamimgs" src="./static/images/5.jpg">
+                        <div class="carousel-caption">
+                            <p>
+                                 Mr Albert Ofamijo <br/>
+                                Executive Director Operation<br/>
+                                Glamour Gold Corp
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img alt="Company Secretary/Legal Adviser,Glamour Gold Corp" id="teamimgs" src="./static/images/8.jpg">
+                        <div class="carousel-caption">
+                            <p>
+                                 Ms. Catherine Frederick<br/> 
+                                 Company Secretary/Legal Adviser<br/
+                                <br/> Glamour Gold Corp
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img alt="Regional Director Central Africa,Glamour Gold Corp" id="teamimgs" src="./static/images/7.jpg">
+                        <div class="carousel-caption">
+                            <p>
+                                 Ms Elizabert Freeman<br/> 
+                                 Regional Director Central Africa<br/>
+                                <br/> Glamour Gold Corp
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img alt="Executive Director Finance,Glamour Gold Corp" id="teamimgs" src="./static/images/4.jpg">
+                        <div class="carousel-caption">
+                            <p>
+                            Dr Brain Adams<br/>
+                            Executive Director Finance<br/>
+                            Glamour Gold Corp
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img alt="Regional Director South Africa, Glamour Gold Corp" id="teamimgs" src="./static/images/2.jpg">
+                        <div class="carousel-caption">
+                            <p>
+                                 Ms Alison J. Lapine </br>
+                                Regional Director South Africa</br>
+                                Glamour Gold Corp
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img alt="Mills Regional Director West Africa, Glamour Gold Corp" id="teamimgs" src="./static/images/1.png">
+                        <div class="carousel-caption">
+                            <p>
+                                Ms Angela A </br>
+                                Mills Regional Director West Africa</br>
+                                Glamour Gold Corp
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img alt="Regional Director East Africa, Glamour Gold Corp" id="teamimgs" src="./static/images/3.jpg">
+                        <div class="carousel-caption">
+                            <p>
+                                Dr.Onyemauchechi Olisaemeka </br>
+                                Regional Director East Africa</br>
+                                Glamour Gold Corp
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <a class="carousel-control-prev" href="#teamcarousel" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#teamcarousel" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </hr>
+            
+            <!-- / team carousel/ -->
+            <!-- title -->
+            <h4 id="titles"id="membership">Membership</h4>
+            <p>Our Memberships and Partners:</p>
+            <!-- memebership carousel -->
+
+            <div id="membershipcarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img alt="World Gold Council" id="membership" src="./static/images/WGC.png">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img alt="United Nations Global Compact" id="membership" src="./static/images/UNGC.jpg">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img alt="International council on Mining and Metals" id="membership" src="./static/images/ICMM.jpg">
+                    </div>
+                    <div class="carousel-item">
+                        <img alt="Diamond Producers Association" id="membership" src="./static/images/DPA.jpg">
+                    </div>
+                </div>
+                <!-- icons for carousels -->
+                <div>
+                    <a class="carousel-control-prev" href="#membershipcarousel" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#membershipcarousel" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+            <!-- /membership carousel/ -->
+            <div>
+                <p><a style="margin-top:5px;" href="#aboutUs">Back to the top.</a></p>
+                <p><a href="javascript:void(0)" class="btn" onclick="closeNav()" style="color:gray">&times; Close </a></p>
+            </div>
+        </div>
+        <!-- /sidenav / -->
+
+        <div id="wrap">
+        <!--Footer-->
+        <footer class="page-footer font-small lightens-5  pt-0">
+            <!--Footer Links-->
+            <div class="container text-center text-md-left">
+                <!-- Footer links -->
+                <div class="row text-center text-md-left pb-3">
+                    <!--First column-->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 id="myicon" class="text-uppercase mb-4 font-weight-bold">Glamour Gold Corp</h6>
+                        <p class="stylish-color-dark">We at gold corp, through resposible mining, work to ensure that you get your gold the right way. <br>
+                            We ensure you get your money's worth<br>
+                            You Need Gold We got it!!</p>
+                    </div>
+                    <!--/.First column-->
+        
+                    <hr class="w-100 clearfix d-md-none">
+        
+                    <!--Second column-->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h6 id="myicon" class="text-uppercase mb-4 font-weight-bold">Products and Services</h6>
+                        <p>
+                            <a href="#!"><b> Marketing and Research</b></a>
+                        </p>
+                        <p>
+                            <a href="#!"><b> Business consultancy</b></a>
+                        </p>
+                        <p>
+                            <a href="#!"><b> Raw gold </b></a>
+                        </p>
+                        <p>
+                            <a href="#!"><b> Diamond </b></a>
+                        </p>
+                    </div>
+                    <!--/.Second column-->
+        
+                    <hr class="w-100 clearfix d-md-none">
+        
+                    <!--Third column-->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h6 id="myicon" class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
+                        <p>
+                            <a href="#!"><b>Investors</b></a>
+                        </p>
+                        <p>
+                            <a href="#!"><b>Join Us</b></a>
+                        </p>
+                        <p>
+                            <a href="#!"><b>Rates</b></a>
+                        </p>
+                        <p>
+                            <a href="#myModal"><b>Help</b></a>
+                        </p>
+                    </div>
+                    <!--/.Third column-->
+        
+                    <hr class="w-100 clearfix d-md-none">
+        
+                    <!--Fourth column-->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 id="myicon" class="text-uppercase mb-4 font-weight-bold">Address</h6>
+                        <p>
+                            <i class="fa fa-home mr-3"></i> Mwingi road Kileleshwa, PO BOX 30516, Nairobi, Kenya</p>
+                        <p>
+                            <i class="fa fa-envelope mr-3"></i>info@glgoldcorp.org.ne</p>
+                        <p>
+                            <i class="fa fa-phone mr-3"></i> + 111 222 3333</p>
+                        <p>
+                            <i class="fa fa-print mr-3"></i> + 44 555 666 777</p>
+                    </div>
+                    <!--/.Fourth column-->
+        
+                </div>
+                <!-- Footer links -->
+        
+                <hr>
+        
+                <div class="row py-3 d-flex align-items-center">
+        
+                    <!--Grid column-->
+                    <div class="col-md-8 col-lg-8">
+        
+                        <!--Copyright-->
+                        <p class="text-center text-md-left grey-text">© 2018 Copyright:
+                            <a href="#!">
+                                <strong>Glamour Gold Corp</strong>
+                            </a>
+                        </p>
+                        <!--/.Copyright-->
+        
+                    </div>
+                    <!--Grid column-->
+        
+                    <!--Grid column-->
+                    <div class="col-md-4 col-lg-4 ml-lg-0">
+        
+                        <!--Social buttons-->
+                        <div id="myicon" class="text-center text-md-right">
+                            <ul class="list-unstyled list-inline">
+                                <li class="list-inline-item">
+                                    <a class="btn-floating btn-sm rgba-white-slight mx-1" href="https://www.facebook.com/glamourgold.corp.1">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--/.Social buttons-->
+        
+                    </div>
+                    <!--Grid column-->
+        
+                </div>
+        
+            </div>
+        
+        </footer>
+        </div>
+        <!--/.Footer-->
+        <!-- modals form -->
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+        
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Contact Us</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+        
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <form action="#">
+                            <div class="form-group">
+                                <div class="form-group">
+                                    <label for="name">First Name:</label>
+                                    <input type="text" class="form-control" id="name" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="name">Last Name</label>
+                                    <input type="text" class="form-control" id="name"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="country">Country</label>
+                                    <select class="input-medium bfh-countries" data-country="US"></select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email address:</label>
+                                    <input type="email" class="form-control" id="email"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phoneno">Your Phone number*</label>
+                                    <input type="number" class="form-control" id="phoneno" class="required"/>
+                                </div>
+                                <div>
+                                    <label for="query">Query</label>
+                                    <input type="textarea" class="form-control" id="query" limit="50">
+                                </div>
+                                <div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+        <!-- services dropdown modal start -->
+        <div class="modal fade" id="GServices" id="ServicesModal" style="width:40%;">
+            <div class="modal-dialog" style="position:absolute;max-width:none; margin:auto;overflow:scroll;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Services</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body"style="background-color:black;color:white;">
+                        <p>
+                            <h5 id="MResearch">Marketing and Research :</h5>
+                            
+                            Glamour Gold Corp has deep industry knowledge 
+                            meaningful insights and the broadest range of capabilities
+                            that help our clients  reach the next level of performance.
+                            Through consumer research, we  dismantle the dynamism in consumer behavior,
+                            by understanding their preferences, motivations and buying trends.
+                            Our analysis provides organizations with precise and unswerving information
+                            about their target.
+                            Glamour gold corp marketing research enables organizations to tap into customer data and insights in
+                            order to better connect with target audiences and develop winning marketing strategies. We conduct feasibility studies to
+                            inform organizations management on the prospects for success of their existing business or proposed venture by uncovering
+                            the strengths, weaknesses, opportunities, threats and resources required to implement the project. Our business analysts employ
+                            latest techniques in identifying organization needs and determining solutions to business problems that deliver value to
+                            stakeholders.
+                        </p>
+                        <p>
+                            <h5 id="Bconsultancy"></h5>
+                            <p>
+                                <h5>Business Consultancy:</h5>
+                                <p> Under business consultancy we provide:</br>
+                                Company creation and management services in the African continent Business</br> 
+                                Information and guidelines on digital marketing strategies </br>
+                                Information on developed and Emerging markets</br></p>
+                            </p>
+                        </p>
+                        <p>
+                            <a style="color:gold"data-dismiss="modal" data-toggle="modal" data-target="#myModal">send us an Email</a>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Sidebar script -->
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "40%";
+                document.getElementById("wrap").style.opacity = "0.1";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0%";
+                document.getElementById("wrap").style.opacity = "1";
+            }
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-formhelpers/2.3.0/js/bootstrap-formhelpers.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    </body>
+</html>
